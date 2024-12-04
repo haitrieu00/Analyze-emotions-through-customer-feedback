@@ -12,9 +12,9 @@ import gensim.models.keyedvectors as word2vec
 
 
 # Load Model đã train
-model_sentiment = load_model(r'D:\3. Study SIU\BigData\31012202538_11012202551\Code\models.h5')
+model_sentiment = load_model('models.h5')
 # Load word embedding model
-model_embedding = word2vec.KeyedVectors.load(r'D:\3. Study SIU\BigData\31012202538_11012202551\Code\word.model')
+model_embedding = word2vec.KeyedVectors.load('word.model')
 
 
 # Tiền xử lý dữ liệu
@@ -154,7 +154,7 @@ upload_button = tk.Button(app, text="Upload File", command=upload_file)
 upload_button.pack()
 
 # Load hình ảnh
-image = Image.open(r'D:\3. Study SIU\BigData\31012202538_11012202551\Misc\text.png')
+image = Image.open('text.png')
 
 # Chuyển đổi hình ảnh thành đối tượng hình ảnh của tkinter
 photo = ImageTk.PhotoImage(image)
